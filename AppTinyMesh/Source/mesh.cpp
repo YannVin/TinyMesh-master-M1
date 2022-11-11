@@ -629,6 +629,21 @@ void Mesh::Homothetie(Vector v)
 }
 
 /*!
+\brief Applatissement d'un mesh general.
+\param t double factor.
+*/
+void Mesh::Applatissement(double t)
+{
+    for(int i=0; i<vertices.size();i++)
+    {
+        if(vertices[i][2]> t)
+        {
+            vertices[i][2]= t;
+        }
+    }
+}
+
+/*!
 \brief Translation du Mesh.
 
 \param v Vector vecteur de translation.

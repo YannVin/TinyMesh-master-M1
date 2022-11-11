@@ -141,6 +141,7 @@ public:
 
   //fonctions de transformation
   void Merge(const Mesh&);
+  void Applatissement(double);
 
   void RotationX(double);
   void RotationY(double);
